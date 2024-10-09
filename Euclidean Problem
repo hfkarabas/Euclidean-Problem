@@ -1,0 +1,9 @@
+def euclidian(a, b):
+    if b == 0:
+        return a
+    return euclidean(b, a % b)
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+result = euclidian(a, b)
+print(f"The euclidean of {a} and {b} is: {result}")
